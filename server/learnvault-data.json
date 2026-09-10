@@ -1,0 +1,1227 @@
+{
+  "users": [
+    {
+      "id": "user-stu-1001",
+      "role": "student",
+      "studentId": "STU1001",
+      "name": "Demo Student",
+      "email": "student1@learnvault.ai",
+      "password": "student123",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "user-stu-1002",
+      "role": "student",
+      "studentId": "STU1002",
+      "name": "Alex Student",
+      "email": "alex@learnvault.ai",
+      "password": "student123",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "user-tch-1001",
+      "role": "teacher",
+      "teacherId": "TCH1001",
+      "name": "Prof. Katherine Vance",
+      "email": "teacher@learnvault.ai",
+      "password": "teacher123",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "subj-dbms",
+      "code": "CS301",
+      "title": "Database Management Systems",
+      "description": "Relational models, SQL, normalization, transactions, indexing, and query optimization.",
+      "icon": "Database",
+      "difficulty": "Intermediate",
+      "topicCount": 4
+    },
+    {
+      "id": "subj-python",
+      "code": "CS102",
+      "title": "Python Programming",
+      "description": "Core syntax, data structures, functional paradigms, OOP, and idiomatic Python.",
+      "icon": "Code2",
+      "difficulty": "Beginner to Intermediate",
+      "topicCount": 4
+    },
+    {
+      "id": "subj-dsa",
+      "code": "CS201",
+      "title": "Data Structures & Algorithms",
+      "description": "Arrays, linked lists, trees, graphs, dynamic programming, and complexity analysis.",
+      "icon": "Binary",
+      "difficulty": "Advanced",
+      "topicCount": 4
+    },
+    {
+      "id": "subj-os",
+      "code": "CS302",
+      "title": "Operating Systems",
+      "description": "Process management, concurrency, CPU scheduling, deadlocks, and virtual memory.",
+      "icon": "Cpu",
+      "difficulty": "Intermediate",
+      "topicCount": 4
+    },
+    {
+      "id": "subj-networks",
+      "code": "CS304",
+      "title": "Computer Networks",
+      "description": "OSI and TCP/IP models, routing protocols, transport layer flow control, and application protocols.",
+      "icon": "Network",
+      "difficulty": "Intermediate",
+      "topicCount": 4
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-dbms-norm",
+      "subjectId": "subj-dbms",
+      "subjectTitle": "Database Management Systems",
+      "title": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "description": "Decomposition of relational schemas to minimize redundancy, anomalies, and dependency issues.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 35,
+      "summary": "Master functional dependencies, 1NF atomic values, 2NF full functional dependency, and 3NF transitive elimination."
+    },
+    {
+      "id": "topic-dbms-joins",
+      "subjectId": "subj-dbms",
+      "subjectTitle": "Database Management Systems",
+      "title": "SQL Joins & Relational Algebra",
+      "description": "Inner, Left, Right, Full Outer, and Cross Joins with query execution strategies.",
+      "difficulty": "Beginner",
+      "estimatedMinutes": 25,
+      "summary": "Combine data across tables using primary/foreign key relationships efficiently."
+    },
+    {
+      "id": "topic-dbms-trans",
+      "subjectId": "subj-dbms",
+      "subjectTitle": "Database Management Systems",
+      "title": "Transactions & ACID Properties",
+      "description": "Atomicity, Consistency, Isolation, and Durability with concurrency control techniques.",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 40,
+      "summary": "Ensure data integrity under concurrent user access and system failures."
+    },
+    {
+      "id": "topic-dbms-index",
+      "subjectId": "subj-dbms",
+      "subjectTitle": "Database Management Systems",
+      "title": "Indexing & B+ Trees",
+      "description": "B-Trees, B+ Trees, clustered vs non-clustered indexing, and index scan performance.",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 30,
+      "summary": "Optimize read performance through hierarchical balanced tree indices."
+    },
+    {
+      "id": "topic-py-func",
+      "subjectId": "subj-python",
+      "subjectTitle": "Python Programming",
+      "title": "Functions, Scope & Closures",
+      "description": "First-class functions, *args/**kwargs, decorators, lexical scoping, and lambda expressions.",
+      "difficulty": "Beginner",
+      "estimatedMinutes": 25,
+      "summary": "Write modular, reusable, and cleanly scoped Pythonic functions."
+    },
+    {
+      "id": "topic-py-lists",
+      "subjectId": "subj-python",
+      "subjectTitle": "Python Programming",
+      "title": "Lists, Tuples & Comprehensions",
+      "description": "Sequence types, mutability differences, slicing, and memory considerations.",
+      "difficulty": "Beginner",
+      "estimatedMinutes": 20,
+      "summary": "Manipulate sequence collections with list comprehensions and generator expressions."
+    },
+    {
+      "id": "topic-py-dicts",
+      "subjectId": "subj-python",
+      "subjectTitle": "Python Programming",
+      "title": "Dictionaries, Sets & Hash Maps",
+      "description": "Key-value associations, hashability, set operations, and time complexities.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 25,
+      "summary": "Leverage hash tables for O(1) average-time lookups and set mathematics."
+    },
+    {
+      "id": "topic-py-oop",
+      "subjectId": "subj-python",
+      "subjectTitle": "Python Programming",
+      "title": "Object-Oriented Programming (OOP)",
+      "description": "Classes, inheritance, polymorphism, encapsulation, dunder methods, and composition.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 40,
+      "summary": "Model real-world domains using robust class hierarchies and encapsulation."
+    },
+    {
+      "id": "topic-dsa-arrays",
+      "subjectId": "subj-dsa",
+      "subjectTitle": "Data Structures & Algorithms",
+      "title": "Arrays & Two-Pointer Techniques",
+      "description": "Contiguous memory layout, sliding window patterns, two-pointer search, and prefix sums.",
+      "difficulty": "Beginner",
+      "estimatedMinutes": 30,
+      "summary": "Optimize linear scans from O(n^2) to O(n) using pointer strategies."
+    },
+    {
+      "id": "topic-dsa-linkedlists",
+      "subjectId": "subj-dsa",
+      "subjectTitle": "Data Structures & Algorithms",
+      "title": "Singly & Doubly Linked Lists",
+      "description": "Pointer manipulation, reversal algorithms, cycle detection (Floyd’s algorithm).",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 35,
+      "summary": "Dynamic node allocation and pointer-based sequence traversals."
+    },
+    {
+      "id": "topic-dsa-stacks",
+      "subjectId": "subj-dsa",
+      "subjectTitle": "Data Structures & Algorithms",
+      "title": "Stacks, Queues & Monotonic Sequences",
+      "description": "LIFO and FIFO mechanics, parentheses matching, BFS queue traversal, monotonic stack lookups.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 30,
+      "summary": "Solve constraint-ordered retrieval and traversal problems."
+    },
+    {
+      "id": "topic-dsa-trees",
+      "subjectId": "subj-dsa",
+      "subjectTitle": "Data Structures & Algorithms",
+      "title": "Binary Trees & Binary Search Trees (BST)",
+      "description": "Tree traversals (in-order, pre-order, post-order, level-order), BST properties, and height balancing.",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 45,
+      "summary": "Hierarchical data partitioning and log(n) search structures."
+    },
+    {
+      "id": "topic-os-processes",
+      "subjectId": "subj-os",
+      "subjectTitle": "Operating Systems",
+      "title": "Processes, Threads & Concurrency",
+      "description": "PCB, process state lifecycle, context switching, multithreading models, race conditions.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 35,
+      "summary": "Understand execution units, memory layout of processes, and kernel scheduling."
+    },
+    {
+      "id": "topic-os-sched",
+      "subjectId": "subj-os",
+      "subjectTitle": "Operating Systems",
+      "title": "CPU Scheduling Algorithms",
+      "description": "FCFS, SJF, Round Robin, Priority Scheduling, Multi-Level Feedback Queues.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 30,
+      "summary": "Balance throughput, turnaround time, waiting time, and starvation avoidance."
+    },
+    {
+      "id": "topic-os-deadlocks",
+      "subjectId": "subj-os",
+      "subjectTitle": "Operating Systems",
+      "title": "Deadlocks & Banker’s Algorithm",
+      "description": "Coffman four conditions, resource allocation graphs, deadlock avoidance and detection.",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 40,
+      "summary": "Prevent systemic hangs in multi-resource concurrent environments."
+    },
+    {
+      "id": "topic-os-memory",
+      "subjectId": "subj-os",
+      "subjectTitle": "Operating Systems",
+      "title": "Virtual Memory & Paging",
+      "description": "Page tables, TLB cache, page faults, demand paging, and page replacement algorithms (LRU, FIFO).",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 40,
+      "summary": "Bridge physical RAM limits using virtual address spaces and paging."
+    },
+    {
+      "id": "topic-net-osi",
+      "subjectId": "subj-networks",
+      "subjectTitle": "Computer Networks",
+      "title": "OSI 7-Layer Architecture",
+      "description": "Physical, Data Link, Network, Transport, Session, Presentation, and Application layers.",
+      "difficulty": "Beginner",
+      "estimatedMinutes": 25,
+      "summary": "Encapsulation and protocol responsibilities across modern networking stacks."
+    },
+    {
+      "id": "topic-net-tcp",
+      "subjectId": "subj-networks",
+      "subjectTitle": "Computer Networks",
+      "title": "TCP vs UDP & 3-Way Handshake",
+      "description": "Reliable byte streams, SYN-SYNACK-ACK, sequence numbers, congestion window, UDP datagrams.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 30,
+      "summary": "Examine transport layer reliability, error checking, and latency trade-offs."
+    },
+    {
+      "id": "topic-net-routing",
+      "subjectId": "subj-networks",
+      "subjectTitle": "Computer Networks",
+      "title": "IP Addressing & Subnetting",
+      "description": "IPv4 vs IPv6, CIDR notation, subnet masks, routing tables, and NAT translation.",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 35,
+      "summary": "Calculate subnet ranges and understand packet forwarding in networks."
+    },
+    {
+      "id": "topic-net-http",
+      "subjectId": "subj-networks",
+      "subjectTitle": "Computer Networks",
+      "title": "HTTP, HTTPS, TLS & DNS",
+      "description": "Request/Response lifecycle, status codes, TLS cryptographic handshake, domain name resolution.",
+      "difficulty": "Beginner",
+      "estimatedMinutes": 25,
+      "summary": "Follow web communication from domain lookup to secure encrypted payload transfer."
+    }
+  ],
+  "materials": {
+    "topic-dbms-norm": {
+      "id": "mat-norm-01",
+      "topicId": "topic-dbms-norm",
+      "teacherId": "user-tch-1001",
+      "title": "Official Lecture Notes: Relational Normalization",
+      "content": "Normalization is the systematic approach of decomposing database tables to eliminate data redundancy and undesirable anomalies (Insertion, Update, and Deletion anomalies).\n\n### 1. First Normal Form (1NF)\n- Each column must contain atomic (indivisible) values.\n- No repeating groups or multi-valued attributes allowed.\n- Every record must have a unique identifier (Primary Key).\n\n### 2. Second Normal Form (2NF)\n- Must already be in 1NF.\n- No Partial Dependency: Every non-prime attribute must depend entirely on the whole Candidate Key (not just a part of a composite key).\n- Applies only when tables have composite candidate keys.\n\n### 3. Third Normal Form (3NF)\n- Must already be in 2NF.\n- No Transitive Dependency: A non-prime attribute must NOT determine another non-prime attribute (X -> Y where neither is a superkey).\n- Rule: For every functional dependency X -> Y, either X is a superkey or Y is a prime attribute.\n\n### 4. Boyce-Codd Normal Form (BCNF)\n- A stricter 3NF.\n- For every non-trivial functional dependency X -> A, X must be a superkey without exception.",
+      "keyPoints": [
+        "Anomalies solved: Insertion, Deletion, and Update anomalies.",
+        "1NF = Atomic values only, no comma-separated or nested arrays.",
+        "2NF = Eliminates partial dependencies on composite keys.",
+        "3NF = Eliminates transitive dependencies between non-key fields.",
+        "Lossless-join decomposition must always be preserved."
+      ],
+      "examples": [
+        "Unnormalized: Student(ID, Courses: \"Math, CS, Phys\") -> 1NF: Separate rows for each course.",
+        "2NF Violation: Enrollment(StudentID*, CourseID*, CourseFee, Grade). CourseFee depends only on CourseID! Fix: Split into Courses(CourseID*, CourseFee) and Enrollment(StudentID*, CourseID*, Grade).",
+        "3NF Violation: Employee(EmpID*, DeptID, DeptName). DeptName depends on DeptID, which depends on EmpID. Fix: Employee(EmpID*, DeptID) and Department(DeptID*, DeptName)."
+      ],
+      "commonMistakes": [
+        "Thinking 2NF applies when the primary key is just a single column (partial dependency only exists with composite keys!).",
+        "Confusing transitive dependency with direct foreign key relations.",
+        "Over-normalizing production reporting tables where read performance requires intentional denormalization."
+      ],
+      "resources": [
+        {
+          "title": "Database System Concepts (Silberschatz) - Normalization Chapter",
+          "url": "#"
+        },
+        {
+          "title": "W3Schools Relational Normal Forms Visual Guide",
+          "url": "#"
+        }
+      ],
+      "published": true,
+      "updatedAt": "2026-09-01T10:00:00Z"
+    }
+  },
+  "aiExplanations": {
+    "topic-dbms-norm": {
+      "topicId": "topic-dbms-norm",
+      "whatIsIt": "Normalization is a structured relational database design technique that decomposes tables to eliminate data redundancy and prevent insertion, update, and deletion anomalies.",
+      "whyDoesItMatter": "Without normalization, enterprise systems suffer from duplicate records and data corruption. Updating a customer address in one invoice might leave 40 other invoices with outdated data.",
+      "simpleExplanation": "Think of organizing a disorganized closet into labeled drawers. Instead of tossing socks, shirts, and shoes in every drawer, you place shirts in one drawer and socks in another. Tables in a database do the same thing.",
+      "example": "Instead of `Order(OrderID, CustomerName, CustomerEmail, ItemID, Price)`, we decompose into `Customers(CustomerID, Name, Email)` and `Orders(OrderID, CustomerID, ItemID, Price)`.",
+      "keyPoints": [
+        "1NF eliminates repeating groups and ensures atomic single-value fields.",
+        "2NF eliminates partial dependencies on composite primary keys.",
+        "3NF eliminates transitive dependencies between non-key attributes.",
+        "BCNF ensures every determinant is a candidate key."
+      ],
+      "commonMistakes": [
+        "Checking for 2NF when the primary key is only a single attribute (2NF is automatically satisfied if 1NF holds with a single PK!).",
+        "Confusing foreign key references with invalid transitive dependencies.",
+        "Over-normalizing OLAP data warehouses where read-heavy queries require deliberate denormalization."
+      ],
+      "quickRecap": "Remember Codd’s rule: \"The key (1NF), the whole key (2NF), and nothing but the key (3NF)\".",
+      "disclaimer": "AI-generated content should be verified with your course material."
+    },
+    "topic-py-func": {
+      "topicId": "topic-py-func",
+      "whatIsIt": "In Python, functions are first-class citizens: reusable blocks of code that can be assigned to variables, passed as arguments to other functions, and returned from functions.",
+      "whyDoesItMatter": "Functions provide modularity, abstraction, and DRY (Don’t Repeat Yourself) architecture. Understanding scope (LEGB: Local, Enclosing, Global, Built-in) prevents elusive mutation bugs in large programs.",
+      "simpleExplanation": "Think of a function like a kitchen blender with a label: you put in fruits (parameters), press the button (execute code), and it returns a smoothie (return value). The kitchen blender doesn’t alter the items in your living room unless you explicitly tell it to.",
+      "example": "def calculate_tax(income: float, rate: float = 0.15) -> float:\n    \"\"\"Calculates income tax given a rate.\"\"\"\n    if income < 0:\n        raise ValueError(\"Income must be positive\")\n    return round(income * rate, 2)",
+      "keyPoints": [
+        "Functions are declared with the \"def\" keyword and return values with \"return\".",
+        "Parameters can be positional, keyword-default, *args (variable positional), and **kwargs (variable keyword).",
+        "Python uses LEGB rule for variable resolution: Local -> Enclosing -> Global -> Built-in.",
+        "Default mutable arguments (e.g. def foo(x=[])) persist across calls—always default to None instead!"
+      ],
+      "commonMistakes": [
+        "Using mutable default arguments like `def append_item(item, list_=[])`.",
+        "Confusing `return` with `print()`. `print()` outputs to terminal but evaluates to `None`.",
+        "Trying to modify global variables inside local scope without the `global` or `nonlocal` keyword."
+      ],
+      "quickRecap": "Functions bundle logic, enforce DRY principles, respect LEGB scope, and return values (or None by default).",
+      "disclaimer": "AI-generated content should be verified with your course material."
+    },
+    "topic-os-deadlocks": {
+      "topicId": "topic-os-deadlocks",
+      "whatIsIt": "A deadlock is a situation where two or more processes are permanently blocked because each process holds a resource that the other process requires to continue execution.",
+      "whyDoesItMatter": "Deadlocks halt critical software systems, databases, and operating systems. Once a deadlock occurs, manual intervention or process termination is required unless preventive protocols are implemented.",
+      "simpleExplanation": "Imagine a narrow bridge where two cars meet head-on. Neither car can move forward without the other backing up, but neither driver is willing to back up. Both cars are deadlocked forever.",
+      "example": "Process P1 holds Mutex A and requests Mutex B. Concurrently, Process P2 holds Mutex B and requests Mutex A. Neither can release until they acquire both, so neither makes progress.",
+      "keyPoints": [
+        "Four Coffman conditions must hold simultaneously: Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait.",
+        "Breaking ANY ONE of the 4 conditions completely prevents deadlocks.",
+        "Deadlock avoidance: Safe state algorithms like Dijkstra’s Banker’s Algorithm.",
+        "Deadlock recovery: Process termination or resource preemption with rollback."
+      ],
+      "commonMistakes": [
+        "Confusing deadlock with starvation. In starvation, a process eventually could get the resource; in deadlock, it never will.",
+        "Assuming that having resource contention automatically causes deadlock (circular wait must also exist)."
+      ],
+      "quickRecap": "Deadlock requires 4 Coffman conditions. Break circular wait (e.g., global lock ordering) to permanently avoid deadlocks.",
+      "disclaimer": "AI-generated content should be verified with your course material."
+    },
+    "topic-dbms-joins": {
+      "topicId": "topic-dbms-joins",
+      "whatIsIt": "SQL Joins & Relational Algebra is an essential concept within Database Management Systems that defines how components or logic operate reliably.",
+      "whyDoesItMatter": "Understanding this foundational mechanism allows engineers to build scalable, bug-free, and performant architectures.",
+      "simpleExplanation": "At its core, SQL Joins & Relational Algebra simplifies complex interactions into predictable, well-defined rules and execution flows.",
+      "example": "Standard pattern implementation demonstrating SQL Joins & Relational Algebra under typical software constraints.",
+      "keyPoints": [
+        "Core definition and operational lifecycle of SQL Joins & Relational Algebra.",
+        "Trade-offs between performance, memory footprint, and implementation complexity.",
+        "Industry best practices and edge case safeguards.",
+        "Integration with surrounding system protocols."
+      ],
+      "commonMistakes": [
+        "Overlooking edge cases and resource allocation limits.",
+        "Assuming standard defaults without validating requirements."
+      ],
+      "quickRecap": "Mastering SQL Joins & Relational Algebra provides the foundational mental model required for advanced topics in Database Management Systems.",
+      "disclaimer": "AI-generated content should be verified with your course material."
+    },
+    "topic-dbms-trans": {
+      "topicId": "topic-dbms-trans",
+      "whatIsIt": "Transactions & ACID Properties is an essential concept within Database Management Systems that defines how components or logic operate reliably.",
+      "whyDoesItMatter": "Understanding this foundational mechanism allows engineers to build scalable, bug-free, and performant architectures.",
+      "simpleExplanation": "At its core, Transactions & ACID Properties simplifies complex interactions into predictable, well-defined rules and execution flows.",
+      "example": "Standard pattern implementation demonstrating Transactions & ACID Properties under typical software constraints.",
+      "keyPoints": [
+        "Core definition and operational lifecycle of Transactions & ACID Properties.",
+        "Trade-offs between performance, memory footprint, and implementation complexity.",
+        "Industry best practices and edge case safeguards.",
+        "Integration with surrounding system protocols."
+      ],
+      "commonMistakes": [
+        "Overlooking edge cases and resource allocation limits.",
+        "Assuming standard defaults without validating requirements."
+      ],
+      "quickRecap": "Mastering Transactions & ACID Properties provides the foundational mental model required for advanced topics in Database Management Systems.",
+      "disclaimer": "AI-generated content should be verified with your course material."
+    }
+  },
+  "aiShortNotes": {
+    "topic-dbms-norm": {
+      "topicId": "topic-dbms-norm",
+      "title": "Short Notes: Normalization (1NF, 2NF, 3NF, BCNF)",
+      "definition": "Normalization (1NF, 2NF, 3NF, BCNF) represents a fundamental paradigm in Database Management Systems establishing formal structure and constraints.",
+      "keyConcepts": [
+        "Primary principles & formal definitions",
+        "State lifecycle & operational guarantees",
+        "Performance & complexity considerations"
+      ],
+      "formulasRules": [
+        "Rule 1: Strict adherence to invariant constraints",
+        "Rule 2: Proper resource cleanup and error boundaries"
+      ],
+      "examples": [
+        "Standard canonical implementation pattern",
+        "Edge case handling for boundary conditions"
+      ],
+      "commonMistakes": [
+        "Premature optimization before ensuring correctness",
+        "Failing to handle null/boundary inputs"
+      ],
+      "examPoints": [
+        "Memorize core definitions and comparison tables",
+        "Be ready to diagram the step-by-step state transitions"
+      ],
+      "quickRecap": "Normalization (1NF, 2NF, 3NF, BCNF): Key definitions, 2 core rules, and standard design trade-offs."
+    },
+    "topic-dbms-trans": {
+      "topicId": "topic-dbms-trans",
+      "title": "Short Notes: Transactions & ACID Properties",
+      "definition": "Transactions & ACID Properties represents a fundamental paradigm in Database Management Systems establishing formal structure and constraints.",
+      "keyConcepts": [
+        "Primary principles & formal definitions",
+        "State lifecycle & operational guarantees",
+        "Performance & complexity considerations"
+      ],
+      "formulasRules": [
+        "Rule 1: Strict adherence to invariant constraints",
+        "Rule 2: Proper resource cleanup and error boundaries"
+      ],
+      "examples": [
+        "Standard canonical implementation pattern",
+        "Edge case handling for boundary conditions"
+      ],
+      "commonMistakes": [
+        "Premature optimization before ensuring correctness",
+        "Failing to handle null/boundary inputs"
+      ],
+      "examPoints": [
+        "Memorize core definitions and comparison tables",
+        "Be ready to diagram the step-by-step state transitions"
+      ],
+      "quickRecap": "Transactions & ACID Properties: Key definitions, 2 core rules, and standard design trade-offs."
+    }
+  },
+  "questions": {
+    "topic-dbms-norm": [
+      {
+        "id": "q-norm-1",
+        "topicId": "topic-dbms-norm",
+        "questionType": "one-line",
+        "title": "Primary Key Definition",
+        "question": "What is a primary key in a relational database, and why must its value be unique and non-null?",
+        "points": 5,
+        "expectedAnswerStyle": "Concise 1-2 sentence precise technical definition.",
+        "rubric": "Full credit requires mentioning unique row identification and NOT NULL integrity constraint (Entity Integrity rule)."
+      },
+      {
+        "id": "q-norm-2",
+        "topicId": "topic-dbms-norm",
+        "questionType": "diagram",
+        "title": "Decomposition Schema Diagram",
+        "question": "Provide an architecture or schema diagram (or detailed structural description) demonstrating how an unnormalized table with composite primary key and partial dependency is decomposed into Second Normal Form (2NF).",
+        "points": 10,
+        "expectedAnswerStyle": "Visual diagram or clear schema transformation mapping table structures before and after decomposition.",
+        "rubric": "Shows original composite relation, identifies the partial dependency, and shows the resulting 2 separate tables with primary/foreign key link."
+      },
+      {
+        "id": "q-norm-3",
+        "topicId": "topic-dbms-norm",
+        "questionType": "multi-part",
+        "title": "Comprehensive Normalization Breakdown",
+        "question": "Answer the following multi-part questions on relational schema design:",
+        "points": 10,
+        "parts": [
+          {
+            "id": "q-norm-3-a",
+            "partLetter": "A",
+            "question": "Define the core objective of database normalization.",
+            "points": 2,
+            "rubric": "Mentions reducing redundancy and eliminating modification anomalies."
+          },
+          {
+            "id": "q-norm-3-b",
+            "partLetter": "B",
+            "question": "State the rule for 1NF and give an example of an unnormalized value.",
+            "points": 2.5,
+            "rubric": "Mentions atomic values / no repeating groups with a clear multi-value example."
+          },
+          {
+            "id": "q-norm-3-c",
+            "partLetter": "C",
+            "question": "Explain what constitutes a Partial Dependency in 2NF.",
+            "points": 2.5,
+            "rubric": "Clearly explains non-prime attribute depending on a subset of a composite candidate key."
+          },
+          {
+            "id": "q-norm-3-d",
+            "partLetter": "D",
+            "question": "Provide a concrete relational decomposition transforming a 2NF table with transitive dependency into 3NF.",
+            "points": 3,
+            "rubric": "Shows X -> Y and Y -> Z transitive relation separated into two cleanly linked tables."
+          }
+        ],
+        "rubric": "Each part evaluated individually based on technical accuracy, clarity, and examples."
+      },
+      {
+        "id": "q-norm-4",
+        "topicId": "topic-dbms-norm",
+        "questionType": "long",
+        "title": "In-Depth Normal Forms Comparative Essay",
+        "question": "Explain the progressive stages of normalization from 1NF to 3NF and BCNF. Discuss the specific anomalies (Insertion, Deletion, Update) prevented at each level, and explain why a production system might occasionally decide to denormalize.",
+        "points": 15,
+        "expectedAnswerStyle": "Structured response with headings, definitions, anomaly explanations, and trade-off analysis.",
+        "rubric": "Detailed coverage of 1NF, 2NF, 3NF, BCNF rules, anomaly definitions, and trade-offs of query joins vs write integrity."
+      },
+      {
+        "id": "q-norm-5",
+        "topicId": "topic-dbms-norm",
+        "questionType": "mcq",
+        "title": "Transitive Dependency Identification",
+        "question": "Which Normal Form specifically requires that there are no transitive dependencies between non-prime attributes?",
+        "points": 5,
+        "options": [
+          "First Normal Form (1NF)",
+          "Second Normal Form (2NF)",
+          "Third Normal Form (3NF)",
+          "Boyce-Codd Normal Form (BCNF)"
+        ],
+        "correctAnswer": "Third Normal Form (3NF)",
+        "rubric": "Correct option selected: Third Normal Form (3NF)."
+      }
+    ],
+    "topic-py-func": [
+      {
+        "id": "q-py-1",
+        "topicId": "topic-py-func",
+        "questionType": "coding",
+        "title": "Second Largest Element in List",
+        "question": "Write a Python function `second_largest(numbers: list[int]) -> int` that takes a list of integers and returns the second largest unique value. If the list contains fewer than 2 distinct integers, raise a `ValueError(\"Insufficient distinct numbers\")`.",
+        "points": 10,
+        "language": "python",
+        "codeTemplate": "def second_largest(numbers: list[int]) -> int:\n    # Write your solution here\n    pass\n",
+        "expectedBehavior": "Returns 2nd highest unique number; handles duplicates like [5, 5, 4, 3] -> 4; raises ValueError if len(set) < 2.",
+        "rubric": "Evaluates correctness, unique deduplication, edge case handling (< 2 distinct elements), and time efficiency."
+      },
+      {
+        "id": "q-py-2",
+        "topicId": "topic-py-func",
+        "questionType": "short",
+        "title": "Default Mutable Arguments Trap",
+        "question": "Explain why using a mutable object like a list `def append_to(element, target=[])` as a default argument in Python can lead to unexpected behavior, and write the idiomatic fix.",
+        "points": 5,
+        "expectedAnswerStyle": "Short conceptual explanation and code snippet showing `target=None`.",
+        "rubric": "Mentions default arguments evaluated once at function definition time; provides `if target is None: target = []`."
+      }
+    ],
+    "topic-os-deadlocks": [
+      {
+        "id": "q-os-1",
+        "topicId": "topic-os-deadlocks",
+        "questionType": "math",
+        "title": "Banker’s Algorithm Safety State Calculation",
+        "question": "Given 5 processes (P0 to P4) and 3 resource types (A: 10, B: 5, C: 7). Currently allocated resources: P0(0,1,0), P1(2,0,0), P2(3,0,2), P3(2,1,1), P4(0,0,2). Maximum demand: P0(7,5,3), P1(3,2,2), P2(9,0,2), P3(2,2,2), P4(4,3,3). Calculate the Available vector and determine step-by-step whether the system is in a Safe State. State one valid safe execution sequence.",
+        "points": 15,
+        "expectedAnswerStyle": "Step-by-step calculation showing Need matrix, Work vector progression, and final Safe Sequence.",
+        "rubric": "Correct Available calculation [3, 3, 2], correct Need matrix, sequential safety validation steps, valid sequence (e.g., <P1, P3, P4, P0, P2>)."
+      }
+    ],
+    "topic-dbms-index": [
+      {
+        "id": "fb-q-1-1788954625099",
+        "questionType": "one-line",
+        "title": "Core Definition: Indexing",
+        "question": "State the precise definition of Indexing in 1 or 2 technical sentences.",
+        "points": 5,
+        "expectedAnswerStyle": "Concise 1-2 sentence definition highlighting fundamental purpose.",
+        "rubric": "Must state the formal objective, key mechanism, and primary benefit."
+      },
+      {
+        "id": "fb-q-2-1788954625099",
+        "questionType": "multi-part",
+        "title": "Technical Decomposition: Indexing",
+        "question": "Analyze the following aspects of Indexing:",
+        "points": 10,
+        "parts": [
+          {
+            "id": "p1",
+            "partLetter": "A",
+            "question": "What is the primary problem or anomaly this concept solves?",
+            "points": 3,
+            "rubric": "Identifies the specific failure mode, anomaly, or inefficiency."
+          },
+          {
+            "id": "p2",
+            "partLetter": "B",
+            "question": "List two critical constraints or prerequisites required.",
+            "points": 3,
+            "rubric": "Names two valid constraints or rules."
+          },
+          {
+            "id": "p3",
+            "partLetter": "C",
+            "question": "Provide a concrete real-world example demonstrating its application.",
+            "points": 4,
+            "rubric": "Clear example demonstrating correct understanding."
+          }
+        ],
+        "rubric": "Graded per sub-part based on technical precision."
+      }
+    ]
+  },
+  "assignments": [
+    {
+      "id": "asgn-dbms-01",
+      "teacherId": "user-tch-1001",
+      "subjectId": "subj-dbms",
+      "topicId": "topic-dbms-norm",
+      "topicTitle": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "subjectTitle": "Database Management Systems",
+      "title": "Assignment 1: Enterprise Schema Decomposition",
+      "description": "Deconstruct a real-world healthcare patient billing dataset into 3NF. Submit answers using text explanations, diagrams, or voice summaries for conceptual questions.",
+      "totalMarks": 25,
+      "deadline": "2026-09-20T23:59:59Z",
+      "assignedTo": "all",
+      "questions": [
+        {
+          "id": "asgn-q-1",
+          "assignmentId": "asgn-dbms-01",
+          "questionType": "one-line",
+          "title": "Lossless Join Property",
+          "question": "State the mathematical condition required for a binary decomposition of relation R into (R1, R2) to be guaranteed lossless.",
+          "points": 5,
+          "rubric": "Must state: (R1 ∩ R2) -> R1 OR (R1 ∩ R2) -> R2 (common attribute must be superkey of at least one relation)."
+        },
+        {
+          "id": "asgn-q-2",
+          "assignmentId": "asgn-dbms-01",
+          "questionType": "multi-part",
+          "title": "Billing Table Anomalies",
+          "question": "Given table PatientBill(PatientID*, DoctorID*, DoctorName, TreatmentDate, Fee):",
+          "points": 10,
+          "parts": [
+            {
+              "id": "asgn-q-2-a",
+              "partLetter": "A",
+              "question": "Identify the functional dependencies and state the candidate key.",
+              "points": 3,
+              "rubric": "Candidate key: (PatientID, DoctorID, TreatmentDate). Dependency DoctorID -> DoctorName identified."
+            },
+            {
+              "id": "asgn-q-2-b",
+              "partLetter": "B",
+              "question": "Which Normal Form does PatientBill violate and why?",
+              "points": 3,
+              "rubric": "Violates 2NF due to partial dependency (DoctorID -> DoctorName depends on subset of composite key)."
+            },
+            {
+              "id": "asgn-q-2-c",
+              "partLetter": "C",
+              "question": "Propose the decomposed 3NF schema.",
+              "points": 4,
+              "rubric": "Doctors(DoctorID*, DoctorName) and PatientBill(PatientID*, DoctorID*, TreatmentDate*, Fee)."
+            }
+          ],
+          "rubric": "Scored per part for dependency identification, normal form justification, and clean schema."
+        },
+        {
+          "id": "asgn-q-3",
+          "assignmentId": "asgn-dbms-01",
+          "questionType": "diagram",
+          "title": "Final Relational Schema Architecture",
+          "question": "Draw or upload a diagram showing the foreign key references between the decomposed Patient, Doctor, and Billing relations.",
+          "points": 10,
+          "rubric": "Accurate ER/Relational schema arrows showing primary key to foreign key relationships."
+        }
+      ],
+      "createdAt": "2026-09-02T09:00:00Z"
+    },
+    {
+      "id": "asgn-py-01",
+      "teacherId": "user-tch-1001",
+      "subjectId": "subj-python",
+      "topicId": "topic-py-func",
+      "topicTitle": "Functions, Scope & Closures",
+      "subjectTitle": "Python Programming",
+      "title": "Assignment 2: Robust Functional Utilities",
+      "description": "Implement defensive Python functions and decorators with type annotations and error handling.",
+      "totalMarks": 20,
+      "deadline": "2026-09-25T23:59:59Z",
+      "assignedTo": "all",
+      "questions": [
+        {
+          "id": "asgn-py-q1",
+          "assignmentId": "asgn-py-01",
+          "questionType": "coding",
+          "title": "Retry Decorator Implementation",
+          "question": "Write a Python decorator `retry(max_attempts=3)` that re-executes a decorated function if it raises an Exception up to `max_attempts` times before re-raising.",
+          "points": 20,
+          "language": "python",
+          "codeTemplate": "import functools\n\ndef retry(max_attempts=3):\n    # Write your decorator here\n    pass\n",
+          "rubric": "Uses functools.wraps, correctly accepts decorator arguments, attempts execution in loop, catches exceptions, re-raises on failure."
+        }
+      ],
+      "createdAt": "2026-09-04T11:00:00Z"
+    },
+    {
+      "id": "asgn-1788954625086",
+      "teacherId": "user-tch-1001",
+      "subjectId": "subj-dbms",
+      "topicId": "topic-dbms-norm",
+      "topicTitle": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "subjectTitle": "Database Management Systems",
+      "title": "Homework 3: Relational Decompositions",
+      "description": "Decompose relations into 3NF and submit via text, voice or diagrams.",
+      "totalMarks": 20,
+      "deadline": "2026-09-16T17:20:25.0746521+05:30",
+      "assignedTo": "all",
+      "questions": [
+        {
+          "questionType": "one-line",
+          "title": "Lossless Join",
+          "question": "State lossless join rule.",
+          "rubric": "Superkey overlap.",
+          "points": 5,
+          "id": "asgn-q-1788954625086-0"
+        },
+        {
+          "questionType": "short",
+          "title": "Transitive Anomaly",
+          "question": "Explain why 3NF removes transitive dependencies.",
+          "rubric": "Clear explanation of update anomaly.",
+          "points": 15,
+          "id": "asgn-q-1788954625086-1"
+        }
+      ],
+      "createdAt": "2026-09-09T11:50:25.086Z"
+    }
+  ],
+  "assignmentSubmissions": [],
+  "memoryVault": [
+    {
+      "studentId": "STU1001",
+      "topicId": "topic-dbms-norm",
+      "subjectId": "",
+      "topicTitle": "Normalization",
+      "title": "My Voice Explanation of Normal Forms",
+      "contentType": "voice",
+      "voiceDuration": 45,
+      "transcript": "1NF is atomic values. 2NF is no partial dependency on composite keys. 3NF is no transitive dependency between non-keys.",
+      "notes": "Mnemonic: The key, the whole key, nothing but the key",
+      "id": "vault-1788954625025-hfapy",
+      "createdAt": "2026-09-09T11:50:25.025Z",
+      "updatedAt": "2026-09-09T11:50:25.025Z"
+    },
+    {
+      "studentId": "STU1001",
+      "topicId": "topic-dbms-norm",
+      "subjectId": "",
+      "topicTitle": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "title": "My Revision Copy from AI Assessment",
+      "contentType": "text",
+      "textContent": "Score: 22.9/25. Key strengths: Atomic values and primary keys mastered. Revision: Double check transitive dependencies.",
+      "notes": "Saved from assessment feedback",
+      "id": "vault-1788954624996-na47r",
+      "createdAt": "2026-09-09T11:50:24.996Z",
+      "updatedAt": "2026-09-09T11:50:24.996Z"
+    },
+    {
+      "id": "vault-stu1-01",
+      "studentId": "STU1001",
+      "topicId": "topic-dbms-norm",
+      "subjectId": "subj-dbms",
+      "topicTitle": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "title": "My Mental Model for Normalization",
+      "contentType": "text",
+      "textContent": "I understood normalization as a way to reduce redundancy by dividing data into related tables. 1NF kills repeating groups and keeps values atomic. 2NF removes partial key dependencies (only matters if composite primary key!). 3NF eliminates transitive dependencies (non-key pointing to non-key). Whenever I forget, I ask myself: does this column depend on the whole key, and nothing but the key?",
+      "notes": "Remember the mnemonic: \"The Key (1NF), The Whole Key (2NF), And Nothing But The Key (3NF), So Help Me Codd (BCNF)\"",
+      "createdAt": "2026-09-05T14:22:00Z",
+      "updatedAt": "2026-09-05T14:22:00Z"
+    },
+    {
+      "id": "vault-stu1-02",
+      "studentId": "STU1001",
+      "topicId": "topic-dbms-joins",
+      "subjectId": "subj-dbms",
+      "topicTitle": "SQL Joins & Relational Algebra",
+      "title": "Voice Note: Venn Diagrams vs Reality for Joins",
+      "contentType": "voice",
+      "voiceDuration": 42,
+      "transcript": "Recording my thought: Venn diagrams for SQL joins are slightly misleading because joins multiply matching rows instead of just doing pure set theory intersections. INNER join gives rows that match on both sides. LEFT join keeps everything from left and fills missing with NULL.",
+      "notes": "Recorded after the quiz when I got confused on cartesian explosion.",
+      "createdAt": "2026-09-06T10:15:00Z",
+      "updatedAt": "2026-09-06T10:15:00Z"
+    },
+    {
+      "id": "vault-stu1-03",
+      "studentId": "STU1001",
+      "topicId": "topic-py-func",
+      "subjectId": "subj-python",
+      "topicTitle": "Functions, Scope & Closures",
+      "title": "Handwritten Mindmap: Python LEGB Scope Rule",
+      "contentType": "image",
+      "imageDataUrl": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"600\" height=\"300\" viewBox=\"0 0 600 300\"><rect width=\"100%\" height=\"100%\" fill=\"%231e293b\"/><text x=\"30\" y=\"50\" fill=\"%2338bdf8\" font-size=\"20\" font-family=\"sans-serif\" font-weight=\"bold\">MY SCOPE NOTES (LEGB Rule)</text><rect x=\"30\" y=\"80\" width=\"110\" height=\"80\" rx=\"8\" fill=\"%23334155\" stroke=\"%2338bdf8\" stroke-width=\"2\"/><text x=\"85\" y=\"115\" fill=\"white\" font-size=\"16\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">L</text><text x=\"85\" y=\"140\" fill=\"%2394a3b8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">Local</text><rect x=\"160\" y=\"80\" width=\"110\" height=\"80\" rx=\"8\" fill=\"%23334155\" stroke=\"%23818cf8\" stroke-width=\"2\"/><text x=\"215\" y=\"115\" fill=\"white\" font-size=\"16\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">E</text><text x=\"215\" y=\"140\" fill=\"%2394a3b8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">Enclosing</text><rect x=\"290\" y=\"80\" width=\"110\" height=\"80\" rx=\"8\" fill=\"%23334155\" stroke=\"%23a78bfa\" stroke-width=\"2\"/><text x=\"345\" y=\"115\" fill=\"white\" font-size=\"16\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">G</text><text x=\"345\" y=\"140\" fill=\"%2394a3b8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">Global</text><rect x=\"420\" y=\"80\" width=\"110\" height=\"80\" rx=\"8\" fill=\"%23334155\" stroke=\"%23f472b6\" stroke-width=\"2\"/><text x=\"475\" y=\"115\" fill=\"white\" font-size=\"16\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">B</text><text x=\"475\" y=\"140\" fill=\"%2394a3b8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">Built-in</text><text x=\"30\" y=\"220\" fill=\"%23e2e8f0\" font-size=\"14\" font-family=\"sans-serif\">* If variable is assigned inside def, Python assumes Local unless \"global\" keyword is used!</text></svg>",
+      "notes": "Snapped a quick diagram sketch of Python variable search order.",
+      "createdAt": "2026-09-07T16:45:00Z",
+      "updatedAt": "2026-09-07T16:45:00Z"
+    },
+    {
+      "id": "vault-stu2-01",
+      "studentId": "STU1002",
+      "topicId": "topic-os-deadlocks",
+      "subjectId": "subj-os",
+      "topicTitle": "Deadlocks & Banker’s Algorithm",
+      "title": "Alex’s Secret Study Note: Coffman Conditions",
+      "contentType": "text",
+      "textContent": "Remember the acronym MHNC: Mutual exclusion, Hold & wait, No preemption, Circular wait. If we break any ONE of these four pillars, the deadlock castle collapses and cannot form.",
+      "notes": "Personal note for Alex only. Never visible to STU1001 or Teacher.",
+      "createdAt": "2026-09-08T09:00:00Z",
+      "updatedAt": "2026-09-08T09:00:00Z"
+    }
+  ],
+  "quizAttempts": [
+    {
+      "id": "attempt-1788954624943",
+      "studentId": "STU1001",
+      "topicId": "topic-dbms-norm",
+      "topicTitle": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "subjectTitle": "Database Management Systems",
+      "score": 22.9,
+      "maxScore": 25,
+      "percentage": 92,
+      "completedAt": "2026-09-09T11:50:24.943Z",
+      "evaluations": [
+        {
+          "id": "eval-1788954624942",
+          "submissionId": "sub-1788954624942",
+          "studentId": "STU1001",
+          "assessmentId": "quiz-topic-dbms-norm",
+          "questionId": "q-norm-1",
+          "score": 5,
+          "maxScore": 5,
+          "percentage": 100,
+          "overallFeedback": "Evaluated with score 5/5 (100%). Solid response demonstrating key understanding.",
+          "strengths": [
+            "Good comprehensive elaboration with technical context.",
+            "Accurately articulated both Uniqueness and NOT NULL entity integrity constraints."
+          ],
+          "missingPoints": [],
+          "mistakes": [],
+          "mistakeTypes": [
+            "Conceptual"
+          ],
+          "improvementSuggestions": [
+            "Review the formal definitions in your course materials.",
+            "Include practical schema examples when explaining conceptual rules."
+          ],
+          "revisionRecommendation": {
+            "topic": "Primary Key Definition",
+            "reason": "Your answer scored 100%. Review recommended to solidify nuances.",
+            "priority": "medium"
+          },
+          "submittedAt": "2026-09-09T11:50:24.942Z"
+        },
+        {
+          "id": "eval-1788954624942",
+          "submissionId": "sub-1788954624942",
+          "studentId": "STU1001",
+          "assessmentId": "quiz-topic-dbms-norm",
+          "questionId": "q-norm-2",
+          "score": 8.5,
+          "maxScore": 10,
+          "percentage": 85,
+          "overallFeedback": "Diagram evaluated with conceptual relevance. Score: 8.5/10. Visual relations match normalization rules.",
+          "strengths": [
+            "Provided visual/structural representation of the entity relations.",
+            "Image submission successfully analyzed for entity-relationship cardinality and table partitions."
+          ],
+          "missingPoints": [
+            "Did not clearly show referential integrity arrows from child table FK to parent table PK."
+          ],
+          "mistakes": [
+            "Foreign key connectivity ambiguous in diagram."
+          ],
+          "mistakeTypes": [
+            "Conceptual"
+          ],
+          "improvementSuggestions": [
+            "Ensure every decomposed table displays primary key underline and foreign key arrows clearly."
+          ],
+          "revisionRecommendation": {
+            "topic": "Decomposition Schema Diagram",
+            "reason": "Refine diagram notation for foreign key constraints.",
+            "priority": "medium"
+          },
+          "submittedAt": "2026-09-09T11:50:24.942Z"
+        },
+        {
+          "id": "eval-1788954624943",
+          "submissionId": "sub-1788954624943",
+          "studentId": "STU1001",
+          "assessmentId": "quiz-topic-dbms-norm",
+          "questionId": "q-norm-3",
+          "score": 9.4,
+          "maxScore": 10,
+          "percentage": 94,
+          "overallFeedback": "You scored 9.4 / 10 across 4 parts. Your weakest section was Part D.",
+          "strengths": [
+            "Accurately captured the core purpose of eliminating anomalies and redundancy.",
+            "Identified atomic values requirement and non-repeating attributes.",
+            "Correctly articulated partial functional dependency on composite candidate keys.",
+            "Provided a structured decomposition example."
+          ],
+          "missingPoints": [],
+          "mistakes": [
+            "Part D had conceptual gaps: needs more detail"
+          ],
+          "mistakeTypes": [
+            "Conceptual",
+            "Incomplete"
+          ],
+          "improvementSuggestions": [
+            "Review the concepts tested in Part D.",
+            "Focus on precise definitions before attempting decomposition."
+          ],
+          "revisionRecommendation": {
+            "topic": "Comprehensive Normalization Breakdown",
+            "reason": "Part D scored only 2.4/3.",
+            "priority": "medium"
+          },
+          "partEvaluations": [
+            {
+              "partId": "q-norm-3-a",
+              "partLetter": "A",
+              "score": 2,
+              "maxScore": 2,
+              "feedback": "Excellent technical definition.",
+              "strengths": [
+                "Accurately captured the core purpose of eliminating anomalies and redundancy."
+              ],
+              "missingPoints": []
+            },
+            {
+              "partId": "q-norm-3-b",
+              "partLetter": "B",
+              "score": 2.5,
+              "maxScore": 2.5,
+              "feedback": "Clear rule formulation for 1NF.",
+              "strengths": [
+                "Identified atomic values requirement and non-repeating attributes."
+              ],
+              "missingPoints": []
+            },
+            {
+              "partId": "q-norm-3-c",
+              "partLetter": "C",
+              "score": 2.5,
+              "maxScore": 2.5,
+              "feedback": "Strong understanding of 2NF candidate key subsets.",
+              "strengths": [
+                "Correctly articulated partial functional dependency on composite candidate keys."
+              ],
+              "missingPoints": []
+            },
+            {
+              "partId": "q-norm-3-d",
+              "partLetter": "D",
+              "score": 2.4,
+              "maxScore": 3,
+              "feedback": "Good breakdown into related schemas.",
+              "strengths": [
+                "Provided a structured decomposition example."
+              ],
+              "missingPoints": []
+            }
+          ],
+          "submittedAt": "2026-09-09T11:50:24.943Z"
+        }
+      ]
+    },
+    {
+      "id": "attempt-01",
+      "studentId": "STU1001",
+      "topicId": "topic-dbms-norm",
+      "topicTitle": "Normalization (1NF, 2NF, 3NF, BCNF)",
+      "subjectTitle": "Database Management Systems",
+      "score": 29,
+      "maxScore": 50,
+      "percentage": 58,
+      "completedAt": "2026-09-08T15:30:00Z",
+      "evaluations": [
+        {
+          "id": "eval-seed-1",
+          "submissionId": "sub-seed-1",
+          "studentId": "STU1001",
+          "assessmentId": "practice-dbms-norm",
+          "score": 5.8,
+          "maxScore": 10,
+          "percentage": 58,
+          "overallFeedback": "Good initial understanding of normalization rationale, but you struggled with transitive dependencies and partial key definitions.",
+          "strengths": [
+            "Correctly identified the main purpose of normalization is reducing redundancy.",
+            "Understood atomic values in First Normal Form."
+          ],
+          "missingPoints": [
+            "Did not clearly distinguish partial dependency from transitive dependency.",
+            "Missed explaining why 2NF is automatically satisfied when primary key has only 1 attribute."
+          ],
+          "mistakes": [
+            "Stated that transitive dependencies are between primary and candidate keys instead of non-prime attributes.",
+            "Confused BCNF with 3NF regarding prime attributes on the right-hand side."
+          ],
+          "mistakeTypes": [
+            "Conceptual",
+            "Incomplete"
+          ],
+          "improvementSuggestions": [
+            "Review functional dependency definitions with concrete relation tables.",
+            "Practice decomposing a table with composite keys step-by-step."
+          ],
+          "revisionRecommendation": {
+            "topic": "Normalization",
+            "topicId": "topic-dbms-norm",
+            "reason": "You scored 58% in your last assessment and made 3 conceptual mistakes.",
+            "priority": "high"
+          },
+          "submittedAt": "2026-09-08T15:30:00Z"
+        }
+      ]
+    }
+  ],
+  "dailyChallenges": [
+    {
+      "id": "ch-today",
+      "title": "Explain ACID Properties in 60 Seconds",
+      "description": "Summarize Atomicity, Consistency, Isolation, and Durability in under 60 seconds using text or voice recording.",
+      "subject": "DBMS",
+      "topic": "Transactions & ACID",
+      "timeLimitSeconds": 60,
+      "points": 50,
+      "question": {
+        "id": "ch-q-1",
+        "questionType": "short",
+        "title": "ACID in a Nutshell",
+        "question": "Explain what happens to a bank transfer transaction if the server crashes right between deducting funds from Account A and crediting Account B, and state which ACID property resolves this.",
+        "points": 50,
+        "expectedAnswerStyle": "Concise explanation highlighting transaction rollback and Atomicity.",
+        "rubric": "Mentions Atomicity ensures all-or-nothing execution; the transaction rolls back so Account A is not deducted."
+      },
+      "date": "2026-09-09",
+      "completedBy": []
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "studentId": "STU1088",
+      "name": "Elena Rostova",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
+      "points": 1850,
+      "streak": 14,
+      "badgesCount": 5
+    },
+    {
+      "rank": 2,
+      "studentId": "STU1001",
+      "name": "Demo Student (You)",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "points": 1649,
+      "streak": 7,
+      "badgesCount": 4,
+      "isCurrentUser": true
+    },
+    {
+      "rank": 3,
+      "studentId": "STU1042",
+      "name": "Marcus Chen",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80",
+      "points": 1290,
+      "streak": 6,
+      "badgesCount": 4
+    },
+    {
+      "rank": 4,
+      "studentId": "STU1002",
+      "name": "Alex Student",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "points": 1150,
+      "streak": 4,
+      "badgesCount": 3
+    },
+    {
+      "rank": 5,
+      "studentId": "STU1015",
+      "name": "Priya Patel",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+      "points": 980,
+      "streak": 3,
+      "badgesCount": 3
+    }
+  ],
+  "studentBadges": {
+    "STU1001": [
+      {
+        "id": "badge-first-step",
+        "name": "First Step",
+        "description": "Completed your first topic and quiz assessment.",
+        "icon": "Footprints",
+        "unlocked": true,
+        "unlockedAt": "2026-09-01T14:30:00Z"
+      },
+      {
+        "id": "badge-streak-7",
+        "name": "7-Day Learner",
+        "description": "Maintained an active study streak for 7 consecutive days.",
+        "icon": "Flame",
+        "unlocked": true,
+        "unlockedAt": "2026-09-07T18:00:00Z"
+      },
+      {
+        "id": "badge-quiz-master",
+        "name": "Quiz Master",
+        "description": "Achieved 90%+ score across 3 different technical quizzes.",
+        "icon": "Trophy",
+        "unlocked": false
+      },
+      {
+        "id": "badge-problem-solver",
+        "name": "Problem Solver",
+        "description": "Successfully submitted and scored high on 5 multi-part or coding assessments.",
+        "icon": "Cpu",
+        "unlocked": true,
+        "unlockedAt": "2026-09-05T16:20:00Z"
+      },
+      {
+        "id": "badge-revision-pro",
+        "name": "Revision Pro",
+        "description": "Preserved 5 personal conceptual explanations in your private Memory Vault.",
+        "icon": "Brain",
+        "unlocked": true,
+        "unlockedAt": "2026-09-06T12:00:00Z"
+      },
+      {
+        "id": "badge-consistency",
+        "name": "Consistency Champion",
+        "description": "Conquered 10 Daily AI Learning Challenges.",
+        "icon": "Award",
+        "unlocked": false
+      }
+    ],
+    "STU1002": [
+      {
+        "id": "badge-first-step",
+        "name": "First Step",
+        "description": "Completed your first topic and quiz assessment.",
+        "icon": "Footprints",
+        "unlocked": true,
+        "unlockedAt": "2026-09-01T14:30:00Z"
+      },
+      {
+        "id": "badge-streak-7",
+        "name": "7-Day Learner",
+        "description": "Maintained an active study streak for 7 consecutive days.",
+        "icon": "Flame",
+        "unlocked": true,
+        "unlockedAt": "2026-09-07T18:00:00Z"
+      },
+      {
+        "id": "badge-quiz-master",
+        "name": "Quiz Master",
+        "description": "Achieved 90%+ score across 3 different technical quizzes.",
+        "icon": "Trophy",
+        "unlocked": false
+      },
+      {
+        "id": "badge-problem-solver",
+        "name": "Problem Solver",
+        "description": "Successfully submitted and scored high on 5 multi-part or coding assessments.",
+        "icon": "Cpu",
+        "unlocked": false,
+        "unlockedAt": "2026-09-05T16:20:00Z"
+      },
+      {
+        "id": "badge-revision-pro",
+        "name": "Revision Pro",
+        "description": "Preserved 5 personal conceptual explanations in your private Memory Vault.",
+        "icon": "Brain",
+        "unlocked": false,
+        "unlockedAt": "2026-09-06T12:00:00Z"
+      },
+      {
+        "id": "badge-consistency",
+        "name": "Consistency Champion",
+        "description": "Conquered 10 Daily AI Learning Challenges.",
+        "icon": "Award",
+        "unlocked": false
+      }
+    ]
+  }
+}
